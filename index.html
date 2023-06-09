@@ -8,63 +8,235 @@
     <title>João Oliveira</title>
 </head>
 <body>
+
+    <header>
+        <nav>
+            <p onclick="scrollToSection('home')">Home</p>
+            <p onclick="scrollToSection('about')">Sobre Mim</p>
+            <p onclick="scrollToSection('projects')">Projetos</p>
+            <p onclick="scrollToSection('contact')">Contato</p>
+        </nav>
+    </header>
     
-        <div class="bg-image">
+        <div class="bg-image" id="home" >
             <main class="container">
                 
-                <section aria-label="Seção do curriculo de João Victor Oliveira" id="home" class="hero-section">
+                <div class="hero-section">
                     <div class="profile-card">
                         <img class="profile-image" src="./images/fotoPerfil.jpg" alt="Profile Image">
-                            <div class="profile-info">
-                                <h1>João Victor Oliveira</h1>
-                                <p>21 anos</p>
+                    </div>        
+                </div>
+                
+                <div class="sobre">
+                    <h4 class="">E aí, Devs! meu nome é</h2>
+                        <h2 class="digitando">João Victor Oliveira</h2>
+                        
+                        <div class="profile-info">
+                            <ul>
+                                <li>
+                                    <i class="fa-sharp fa-solid fa-person-snowboarding"></i>
+                                    <div class="info">
+                                        <p>Sou apaixonado por skate</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-code"></i>
+                                    <div class="info">
+                                        <p>Estagiando com desenvolvimento front-end</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-graduation-cap"></i>
+                                    <div class="info">                       
+                                        <p>Cursando engenharia de software</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-lightbulb"></i>
+                                    <div class="info">                                      
+                                        <p>Interessado em desenvolvimento full-stack</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-rocket"></i>
+                                    <div class="info">                                     
+                                        <p>Pronto para decolar e impulsionar minha carreira como programador</p>
+                                    </div>
+                                </li>
+                            </ul>
+                            <div class="button-git">
+                                <button>
+                                    <a href="https://github.com/JoaoOliveiraskt" target="_blank">
+                                        <p>GITHUB</p>
+                                        <i class="fa-brands fa-github"></i>
+                                    </a>   
+                                </button>
                             </div>
+                        </div>
+                        
                     </div>
-                    
-                    <nav>
-                        <a href="#about">Sobre Mim</a>
-                        <a href="#projects">Projetos</a>
-                        <a href="#contact">Contato</a>
-                    </nav>
-                </section>
-
-                <section class="sobre">
-                    <h2 class="">Olá, eu sou</h2>
-                    <h2 class="digitando">Desenvolvedor web</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut fringilla leo id neque interdum
-                        eleifend. Mauris vitae ligula metus. Aenean consectetur consequat aliquam. Suspendisse id urna.
-                    </p>
-                </section>
             </main>
         </div>
+        
+        <div class="container about" id="about">
+            <h2>Sobre Mim</h2>
+            <div class="button-linkedin">
+                <button>
+                    <a href="https://www.linkedin.com/in/jo%C3%A3o-victor-flores-de-oliveira-b8a867256/" target="_blank">
+                        <p>LINKEDIN</p>
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>   
+                </button>
+            </div>
+            <div class="timeline">
+                <div class="timeline-point"></div> 
+                <div class="timeline-point"></div>
+                <div class="timeline-point"></div>
+              </div>
+              <div class="card-container">
+                <div class="card">
+                  <h3>AGO/2022</h3>
+                  <p>Iniciando minha graduação em Engenharia
+                    de Software na Universidade de Vassouras 
+                    e dando os primeiros passos no mundo
+                    da programação. 
+                  </p>
+                </div>
+              
+                <div class="card">
+                  <h3>NOV/2022</h3>
+                  <p>Iniciando meu primeiro estágio em uma 
+                    empresa, desenvolvendo websites com 
+                    Html, Css  e Javascript.
+                  </p>
+                </div>
+              
+                <div class="card">
+                  <h3>2023</h3>
+                  <p>Me aprofundando nas linguagens Javascript e python
+                    e conhecendo melhor sobre o front-end com React.js.
+                  </p>
+                </div>
+              </div>
+        </div>
 
-<div class="container section-slide"> 
+<section class="container section-slide" id="projects"> 
             <div class="wrapper-image">
-                <h2>Projetos</h2>
+                <h2>Projetos Destacados</h2>
                 <div class="projects-images"><img src="./images/layout-motoLog.png" alt="Project Slide Image"></div>
-                <div class="projects-images"><img src="./images/bg-banner.jpg" alt="Project Slide Image"></div>
-                <div class="projects-images"><img src="https://images.unsplash.com/photo-1684942699420-a79c15d4a305?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Project Slide Image"></div>
+                <div class="projects-images"><img src="images/projetoGOW.png" alt="Project Slide Image"></div>
+                <div class="projects-images"><img src="images/projetoBlizzard.png" alt="Project Slide Image"></div>
             </div>
             <div class="mini-cards">
                 
                 <div class="mini-card">
-                    <img  src="./images/layout-motoLog.png" alt="Project 1 Image">
-                    <p>Projeto 1</p>
+                    <a href="https://joaooliveiraskt.github.io/Moto-Log-Website/" target="_blank">
+                        <img  src="./images/layout-motoLog.png" alt="Project 1 Image">
+                        <p>MotoLog 
+                        </p>
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </a>
                 </div>
 
                 <div class="mini-card">
-                    <img  src="https://images.unsplash.com/photo-1684872305434-cb53abe45e6e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1112&q=80" alt="Project 2 Image">
-                    <p>Projeto 2</p>               
+                    <a href="https://joaooliveiraskt.github.io/gow-page/" target="_blank">
+                        <img  src="images/projetoGOW.png" alt="Project 2 Image">
+                        <p>GOW 
+                        </p>               
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </a>
                 </div>
-              
                 <div class="mini-card">
-                    <img src="https://images.unsplash.com/photo-1684942699420-a79c15d4a305?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Project 3 Image">
-                    <p>Projeto 3</p>
+                    <a href="https://joaooliveiraskt.github.io/blizzard-page/" target="_blank">
+                      <img src="images/projetoBlizzard.png" alt="Project 3 Image">
+                      <p>Blizzard 
+                    </p>
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </a>
                 </div>
             </div>
-</div>
+</section>
+
+<form action="mailto:joaoliveiraam@gmail.com" method="POST" id="contact" class="contact-form container">
+    <label for="name">Nome:</label>
+    <input type="text" name="name" required>
+  
+    <label for="email">E-mail:</label>
+    <input type="email" name="email" required>
+  
+    <label for="state">Estado:</label>
+    <select id="state" name="state" required>
+      <option value="">Selecione o estado</option>
+      <option value="AC">Acre</option>
+      <option value="AL">Alagoas</option>
+      <option value="AP">Amapá</option>
+      <option value="AM">Amazonas</option>
+      <option value="BA">Bahia</option>
+      <option value="CE">Ceará</option>
+      <option value="DF">Distrito Federal</option>
+      <option value="ES">Espírito Santo</option>
+      <option value="GO">Goiás</option>
+      <option value="MA">Maranhão</option>
+      <option value="MT">Mato Grosso</option>
+      <option value="MS">Mato Grosso do Sul</option>
+      <option value="MG">Minas Gerais</option>
+      <option value="PA">Pará</option>
+      <option value="PB">Paraíba</option>
+      <option value="PR">Paraná</option>
+      <option value="PE">Pernambuco</option>
+      <option value="PI">Piauí</option>
+      <option value="RJ">Rio de Janeiro</option>
+      <option value="RN">Rio Grande do Norte</option>
+      <option value="RS">Rio Grande do Sul</option>
+      <option value="RO">Rondônia</option>
+      <option value="RR">Roraima</option>
+      <option value="SC">Santa Catarina</option>
+      <option value="SP">São Paulo</option>
+      <option value="SE">Sergipe</option>
+      <option value="TO">Tocantins</option>
+    </select>
+
+    <label for="message">E-mail:</label>
+    <textarea name="comentarios"></textarea>
+  
+    <div class="form-buttons">
+        <button type="submit">Enviar</button>
+        <button type="reset">Limpar</button>
+    </div>
+  </form>
+
+<footer class="">
+    <div class="footer-content">
+        <div class="footer-contacts">
+            
+            <div class="div-contatos">
+                <i class="fa-brands fa-whatsapp"></i>
+                <p>(22) 981764969</p>
+            </div>
+            <div class="div-contatos">
+                <i class="fa-solid fa-envelope"></i>
+                <p>joaoliveiraam@gmail.com</p>
+            </div>
+            <div class="footer-social-media">
+                <a href="https://www.linkedin.com/in/jo%C3%A3o-victor-flores-de-oliveira-b8a867256/" target="_blank" class="footer-link" id="linkedin">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+                <a href="https://github.com/JoaoOliveiraskt" target="_blank" class="footer-link" id="github">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+                <a href="https://instagram.com/instajoao._?igshid=NTc4MTIwNjQ2YQ==" target="_blank" class="footer-link" id="instagram">
+                    <i class="fa-brands fa-square-instagram"></i>
+                </a>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <span>© 2023 João Victor Oliveira</span>
+        </div>
+    </div>
+</footer>
     
 <script src="slide.js"></script>
 <script src="script.js"></script>
+<script src="https://kit.fontawesome.com/7380623b12.js" crossorigin="anonymous"></script>
 </body>
 </html>

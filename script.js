@@ -1,4 +1,8 @@
-
+function scrollToSection(sectionId) {
+    const section = document.getElementById(sectionId);
+    section.scrollIntoView({ behavior: 'smooth' });
+  }
+  
 
 const titulo = document.querySelector('.digitando');
 let interval = 0
