@@ -16,6 +16,13 @@
             <p onclick="scrollToSection('projects')">Projetos</p>
             <p onclick="scrollToSection('contact')">Contato</p>
         </nav>
+        <div id='icon-menu' class="icon-menu"><i class="fa-solid fa-bars"></i></div>
+        <div id="menu" class="menu hide">
+                <a class="menu-link" onclick="scrollToSection('home')">Home</a>
+                <a class="menu-link" onclick="scrollToSection('about')">Sobre Mim</a>
+                <a class="menu-link" onclick="scrollToSection('projects')">Projetos</a>
+                <a class="menu-link" onclick="scrollToSection('contact')">Contato</a>      
+        </div>
     </header>
     
         <div class="bg-image" id="home" >
@@ -64,7 +71,7 @@
                                     </div>
                                 </li>
                             </ul>
-                            <div class="button-git">
+                            <div class="bttn-roxo button-git">
                                 <button>
                                     <a href="https://github.com/JoaoOliveiraskt" target="_blank">
                                         <p>GITHUB</p>
@@ -80,7 +87,7 @@
         
         <div class="container about" id="about">
             <h2>Sobre Mim</h2>
-            <div class="button-linkedin">
+            <div class="bttn-roxo button-linkedin">
                 <button>
                     <a href="https://www.linkedin.com/in/jo%C3%A3o-victor-flores-de-oliveira-b8a867256/" target="_blank">
                         <p>LINKEDIN</p>
@@ -121,39 +128,48 @@
         </div>
 
 <section class="container section-slide" id="projects"> 
+    <h2>Projetos Destacados</h2>
             <div class="wrapper-image">
-                <h2>Projetos Destacados</h2>
-                <div class="projects-images"><img src="./images/layout-motoLog.png" alt="Project Slide Image"></div>
-                <div class="projects-images"><img src="images/projetoGOW.png" alt="Project Slide Image"></div>
-                <div class="projects-images"><img src="images/projetoBlizzard.png" alt="Project Slide Image"></div>
-            </div>
-            <div class="mini-cards">
-                
-                <div class="mini-card">
-                    <a href="https://joaooliveiraskt.github.io/Moto-Log-Website/" target="_blank">
-                        <img  src="./images/layout-motoLog.png" alt="Project 1 Image">
-                        <p>MotoLog 
+                <div class="slide">
+                    <div class="projects-images"><img src="./images/layout-motoLog.png" alt="Project Slide Image"></div>
+                    <div class="projects-images"><img src="images/projetoGOW.png" alt="Project Slide Image"></div>
+                    <div class="projects-images"><img src="images/projetoBlizzard.png" alt="Project Slide Image"></div>
+                </div>
+                    <div class="mini-cards">
+                    
+                    <div class="mini-card">
+                        <a href="https://joaooliveiraskt.github.io/Moto-Log-Website/" target="_blank">
+                            <img  src="./images/layout-motoLog.png" alt="Project 1 Image">
+                            <p>MotoLog 
+                            </p>
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+                    </div>
+    
+                    <div class="mini-card">
+                        <a href="https://joaooliveiraskt.github.io/gow-page/" target="_blank">
+                            <img  src="images/projetoGOW.png" alt="Project 2 Image">
+                            <p>GOW 
+                            </p>               
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+                    </div>
+                    <div class="mini-card">
+                        <a href="https://joaooliveiraskt.github.io/blizzard-page/" target="_blank">
+                          <img src="images/projetoBlizzard.png" alt="Project 3 Image">
+                          <p>Blizzard 
                         </p>
                         <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                    </a>
+                        </a>
+                    </div>
                 </div>
-
-                <div class="mini-card">
-                    <a href="https://joaooliveiraskt.github.io/gow-page/" target="_blank">
-                        <img  src="images/projetoGOW.png" alt="Project 2 Image">
-                        <p>GOW 
-                        </p>               
-                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </div>
+            <div class="bttn-roxo cards-bttn">
+                <button>
+                    <a href="https://github.com/JoaoOliveiraskt?tab=repositories" target="_blank">
+                        <p>Siga para outros projetos</p>
                     </a>
-                </div>
-                <div class="mini-card">
-                    <a href="https://joaooliveiraskt.github.io/blizzard-page/" target="_blank">
-                      <img src="images/projetoBlizzard.png" alt="Project 3 Image">
-                      <p>Blizzard 
-                    </p>
-                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                    </a>
-                </div>
+                </button>
             </div>
 </section>
 
@@ -196,7 +212,7 @@
       <option value="TO">Tocantins</option>
     </select>
 
-    <label for="message">E-mail:</label>
+    <label for="message">Mensagem:</label>
     <textarea name="comentarios"></textarea>
   
     <div class="form-buttons">
@@ -205,7 +221,7 @@
     </div>
   </form>
 
-<footer class="">
+<footer >
     <div class="footer-content">
         <div class="footer-contacts">
             
@@ -235,7 +251,7 @@
     </div>
 </footer>
     
-<script src="slide.js"></script>
+
 <script src="script.js"></script>
 <script src="https://kit.fontawesome.com/7380623b12.js" crossorigin="anonymous"></script>
 </body>
